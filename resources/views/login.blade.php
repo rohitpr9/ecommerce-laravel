@@ -2,16 +2,17 @@
 @section('content')
 <div class="card" style="width: 18rem;position:relative;right: -35%;top: 8rem;">
     <div class="card-body">
-<form>
+<form action='login' method="POST">
+  @csrf
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="form1Example1" class="form-control" />
+      <input type="email" id="form1Example1" name='email' class="form-control" />
       <label class="form-label" for="form1Example1">Email address</label>
     </div>
   
     <!-- Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="form1Example2" class="form-control" />
+      <input type="password" id="form1Example2" name='password' class="form-control" />
       <label class="form-label" for="form1Example2">Password</label>
     </div>
   
